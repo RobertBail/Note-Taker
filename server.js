@@ -2,8 +2,7 @@ const express = require('express');
 const path = require('path');
 const fs = require("fs");
 const noteData = require('./db/db.json');
-const PORT = 3001;
-//or const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 //or 3000?
 const app = express();
 //where to put this, unique id when saved (below)? this gave an error "can't import"(?) when deploying
