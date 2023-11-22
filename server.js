@@ -4,9 +4,9 @@ const fs = require("fs");
 const noteData = require('./db/db.json');
 const PORT = process.env.PORT || 3001;
 //or 3000?
-const app = express();
-import { nanoid } from "nanoid";
-model.id = nanoid();
+//const app = express();
+//import { nanoid } from "nanoid";
+//model.id = nanoid();
 
 
 app.use(express.json());
