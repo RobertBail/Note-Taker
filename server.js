@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require("fs");
 const noteData = require('./db/db.json');
 const PORT = process.env.PORT || 3000;
-//or 3000?
+//or 3001?
 const app = express();
 //where to put this, unique id when saved (below)? this gave an error "can't import"(?) when deploying
 //import { nanoid } from "nanoid";
