@@ -2,12 +2,13 @@ const express = require('express');
 const path = require('path');
 const fs = require("fs");
 const noteData = require('./db/db.json');
-const PORT = process.env.PORT || 3002;
-//or 3001?
+const PORT = process.env.PORT || 3001;
 const app = express();
 //where to put this, unique id when saved (below)? this gave an error "can't import"(?) when deploying
+// "nanoid": "^5.0.3", in "dependencies":
 //import { nanoid } from "nanoid";
 //model.id = nanoid();
+//note.id (below)?
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
