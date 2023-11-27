@@ -37,7 +37,7 @@ function createNewNote(body, notesArray) {
       notesArray = [];
   
   if (notesArray.length === 0)
-      notesArray.push[0]++;
+      notesArray.push[0];
 //attempting to display each note again, only doing first note
   body.id = notesArray[0];
  notesArray[0]++;
