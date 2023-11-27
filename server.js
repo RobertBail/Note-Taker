@@ -39,7 +39,8 @@ function createNewNote(body, notesArray) {
   if (notesArray.length === 0)
       notesArray.push(0);
 
-  body.id = notesArray[0]++;
+  body.id = notesArray[0];
+ notesArray[1]++;
 
   notesArray.push(newNote);
   fs.writeFileSync(
@@ -56,7 +57,7 @@ app.post('/api/notes', (req, res) => {
 
 function deleteNote(id, notesArray) {
   for (let i = 0; i < notesArray.length; i++) {
-      let note = notesArray[0]++;
+      let note = notesArray[i];
 
   if (note.id == id) {
   notesArray.splice(i, 1);
