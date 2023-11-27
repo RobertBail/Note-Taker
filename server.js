@@ -38,7 +38,7 @@ function createNewNote(body, notesArray) {
   
   if (notesArray.length === 0)
       notesArray.push[0]++;
-
+//attempting to display each note again, only doing first note
   body.id = notesArray[0];
  notesArray[0]++;
 
@@ -61,7 +61,7 @@ function deleteNote(id, notesArray) {
       notesArray[1];
       notesArray[2];
       notesArray[3];
-
+//(above) attempting to have each note able to be deleted, ++ deleted the whole thing
   if (note.id == id) {
   notesArray.splice(i, 1);
   fs.writeFileSync(
