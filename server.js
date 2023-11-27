@@ -44,8 +44,8 @@ function createNewNote(body, notesArray) {
 
   notesArray.push(newNote);
   fs.writeFileSync(
-      path.join(__dirname, './db/db.json'),
-      JSON.stringify(notesArray, null, 2)
+  path.join(__dirname, './db/db.json'),
+  JSON.stringify(notesArray, null)
   );
   return newNote;
 }
@@ -59,15 +59,15 @@ function deleteNote(id, notesArray) {
   for (let i = 0; i < notesArray.length; i++) {
       let note = notesArray[i];
 
-      if (note.id == id) {
-          notesArray.splice(i, 1);
-          fs.writeFileSync(
-              path.join(__dirname, './db/db.json'),
-              JSON.stringify(notesArray, null, 2)
-          );
+  if (note.id == id) {
+  notesArray.splice(i, 1);
+  fs.writeFileSync(
+  path.join(__dirname, './db/db.json'),
+  JSON.stringify(notesArray, null)
+  );
 
-          break;
-      }
+  break;
+  }
   }
 }
 
