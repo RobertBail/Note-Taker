@@ -40,7 +40,7 @@ function createNewNote(body, notesArray) {
       notesArray.push[0]++;
 //attempting to display each note again, only doing first note
   body.id = notesArray[0];
- notesArray[0]++;
+ notesArray[1]++;
 
   notesArray.push(newNote);
   fs.writeFileSync(
