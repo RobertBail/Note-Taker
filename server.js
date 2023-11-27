@@ -58,7 +58,7 @@ app.post('/api/notes', (req, res) => {
 function deleteNote(id, notesArray) {
   for (let i = 0; i < notesArray.length; i++) {
       let note = notesArray[i];
-      notesArray[i]++;
+      notesArray[1]++;
 
   if (note.id == id) {
   notesArray.splice(i, 1);
