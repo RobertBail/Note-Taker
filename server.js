@@ -67,9 +67,7 @@ function deleteNote(id, notesArray) {
   );
 
   break;
-  }
-  }
-}
+  }}}
 
 app.delete('/api/notes/:id', (req, res) => {
   deleteNote(req.params.id, noteData);
